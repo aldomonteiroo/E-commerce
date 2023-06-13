@@ -51,11 +51,36 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+      <div class="container p-5">
+        <div class="text-left">
+          <h1>Perfil</h1>
+          <br>
+          <hr>
+        </div>
+        <form id="my-profile">
+            <div class="card-body">
+              <div class="row">
+                <table class="table table-dark table-striped">
+                  <tr>
+                    <td> <label> Primer nombre: </label> <br> <input class="w-75" id="firstName" required> </td>
+                    <td> <label>Segundo nombre:</label> <br> <input class="w-75" id="secondName"> </td>
+                  </tr>
+                  <tr>
+                    <td> <label>Primer apellido: </label> <br> <input class="w-75" id="fSurName" required> </td>
+                    <td> <label>Segundo apellido: </label> <br> <input class="w-75" id="sSurName"> </td>
+                  </tr>
+                  <tr>
+                    <td> <label>E-mail: </label> <br> <input class="w-75" id="email" required> </td>
+                    <td> <label>Teléfono de contacto: </label> <br> <input class="w-75" id="contact"> </td>
+                  </tr>
+                </table>
+                <br>
+                <hr>
+              </div>
+                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            </div>  
+        </form>
       </div>
-    </div>
   </main>
   <footer class="text-muted">
     <div class="container">

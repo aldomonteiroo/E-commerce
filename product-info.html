@@ -10,6 +10,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -37,12 +38,44 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
+
+    <div class="container" id="prod-info">
+    </div>
+    <div>
+
+    <div class="container" id="prod-info-comments"></div>
+
+    <div class="list-group" id="commentForm">
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col">
+            <h3 class="text-muted">Comentar</h3>
+            <form action="">
+              <textarea name="mensaje" id="boxComment"></textarea>
+              <br>
+              <br>
+              <label>Tu puntuación:</label><br>
+              <select name="Tu puntuación" id="selectP">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <br>
+              <br>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="container" id="prod-info-related">
+      <h3 class="text-muted"></h3>
+    </div>
   </main>
+  
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">

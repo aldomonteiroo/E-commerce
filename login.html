@@ -8,7 +8,7 @@
   
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/login.css" rel="stylesheet">
   <style>
     body {
       background-color: rgb(248, 249, 250);
@@ -19,9 +19,28 @@
 <body>
   <main class="mt-5">
     <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+
+      <form method="post" name="inicioSesion" class="loginBox">
+
+        <img src="img/login.png" alt="jap-image" class="japImg">
+        <h1>Inicio de Sesión</h1>
+
+        <div class="login-input">
+          <input type="email" id="emailInput" placeholder="Correo electrónico">
+        </div>
+
+        <div class="login-input">
+          <input type="password" id="passInput" placeholder="Contraseña">
+        </div>
+
+        <div class="loginCheckbox">
+          <input type="checkbox" name="checkboxLogin" id="active">
+          <label for="active">Recordarme</label>
+        </div>
+
+        <input type="button" onclick="iniciarSesion()" value="Iniciar Sesion">
+        
+      </form>
     </div>
   </main>
   <footer class="text-muted">
